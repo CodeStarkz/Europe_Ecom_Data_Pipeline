@@ -1,9 +1,5 @@
 # Europe_Ecom_Data_Pipeline
 
-# Europe_Ecom_Data_Pipeline
-
-# Europe_Ecom_Data_Pipeline
-
 ![Python](https://img.shields.io/badge/Python-3.14+-3776AB?logo=python&logoColor=white)
 ![Airflow](https://img.shields.io/badge/Apache%20Airflow-Local%20Dev-blue?logo=apache-airflow&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
@@ -26,27 +22,15 @@ It is designed for local development and learning, not production use.
 
 ## DAG overview
 
-### `pipeline_europe_ecom`
-A TaskFlow-style DAG that:
-
-- checks whether the source CSV exists
-- copies / loads the CSV into an internal working file
-- performs a basic transformation
-- writes the final dataset to PostgreSQL
 
 ### `pipeline_europe_ecom_2`
-A similar end-to-end pipeline that:
+A task flow end-to-end pipeline that:
 
 - checks for the source file
 - loads it into a working location
 - cleans data types
 - stores the transformed data in PostgreSQL
 
-### `conditional_dag`
-A branching example that shows how to route execution based on a calculated value.
-
-### `pipeline`
-A simple demo pipeline that reads a JSON file and moves through a few basic processing steps.
 
 ## Data files
 
